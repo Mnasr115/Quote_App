@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app/core/utils/app_strings.dart';
 import 'package:quotes_app/core/utils/assets_manager.dart';
-import 'package:quotes_app/core/utils/constance.dart';
+import 'package:quotes_app/core/utils/mediaquery_values.dart';
 
 class QuoteScreen extends StatefulWidget {
   const QuoteScreen({super.key});
@@ -20,7 +20,9 @@ class _QuoteScreenState extends State<QuoteScreen> {
         ),
       ),
       body: Center(
-        child: Image.asset(ImageAssets.quote),
+        child: Image.asset(ImageAssets.quote,
+          width: context.width,
+        ),
       ),
     );
   }
