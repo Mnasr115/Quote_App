@@ -19,15 +19,8 @@ class _QuoteScreenState extends State<QuoteScreen> {
           AppStrings.appName,
         ),
       ),
-      body: InkWell(
-        onTap: () => AppConstance.showToast(
-          context: context,
-          message: 'Error Happened',
-          color: Colors.red,
-        ),
-        child: Center(
-          child: Image.asset(ImageAssets.quote),
-        ),
+      body: Center(
+        child: Image.asset(ImageAssets.quote),
       ),
     );
   }
