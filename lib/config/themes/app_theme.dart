@@ -19,34 +19,39 @@ class AppTheme {
       selectedIconTheme: IconThemeData(size: 25),
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: ColorManager.transparent,
+      backgroundColor: ColorManager.primary,
       elevation: 0,
       centerTitle: true,
       shadowColor: ColorManager.transparent,
       titleTextStyle: GoogleFonts.elMessiri(
-        color: ColorManager.darkGery,
+        color: ColorManager.white,
         fontSize: 25,
         fontWeight: FontWeight.w700,
       ),
       iconTheme: const IconThemeData(
-        color: ColorManager.black,
+        color: ColorManager.white,
         size: 30,
       ),
     ),
     textTheme: TextTheme(
+      headlineLarge: const TextStyle(
+        color: ColorManager.white,
+        fontSize: 22,
+        height: 1.3,
+      ),
       bodySmall: GoogleFonts.elMessiri(
         fontSize: 15,
-        color: ColorManager.black,
+        color: ColorManager.white,
         fontWeight: FontWeight.w500,
       ),
       bodyMedium: GoogleFonts.elMessiri(
-        fontSize: 20,
-        color: ColorManager.black,
+        fontSize: 22,
+        color: ColorManager.white,
         fontWeight: FontWeight.w600,
       ),
       bodyLarge: GoogleFonts.elMessiri(
         fontSize: 25,
-        color: ColorManager.black,
+        color: ColorManager.white,
         fontWeight: FontWeight.w700,
       ),
     ),
